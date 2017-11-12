@@ -71,7 +71,7 @@ int Exynos_Video_Register_Decoder(
     } else {
         MulIPRegisterDecoder = dlsym(glibMulIPHandle, "MulIP_Exynos_Video_Register_Decoder");
         if (MulIPRegisterDecoder == NULL) {
-            ALOGE("%s: dlsym Failed to get MulIP_Exynos_Video_Register_Decoder symbol", __func__);
+//            ALOGE("%s: dlsym Failed to get MulIP_Exynos_Video_Register_Decoder symbol", __func__);
             ret = VIDEO_ERROR_BADPARAM;
             goto EXIT;
         }
@@ -104,7 +104,7 @@ int Exynos_Video_Register_Encoder(
     } else {
         MulIPRegisterEncoder = dlsym(glibMulIPHandle, "MulIP_Exynos_Video_Register_Encoder");
         if (MulIPRegisterEncoder == NULL) {
-            ALOGE("%s: dlsym Failed to get MulIP_Exynos_Video_Register_Encoder symbol", __func__);
+//            ALOGE("%s: dlsym Failed to get MulIP_Exynos_Video_Register_Encoder symbol", __func__);
             ret = VIDEO_ERROR_BADPARAM;
             goto EXIT;
         }
